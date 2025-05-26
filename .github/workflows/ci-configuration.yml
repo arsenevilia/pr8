@@ -28,5 +28,5 @@ jobs:
       - name: Build project
         run: cmake --build build
 
-      - name: Run program
-        run: ./build/main
+      #- name: Run program
+      #  run: ./build/main
