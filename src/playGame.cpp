@@ -28,7 +28,7 @@ void playGame() {
 
         if (checkWin(board, currentPlayer)) {
             displayBoard(board);
-            cout << "Гравець " << currentPlayer << " переміг!\n";
+            cout << "Гравець " << currentPlayer << " переміг УРААА!\n";
             return;
         }
 
