@@ -17,8 +17,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create build directory
-        run: mkdir build
+      - name: Ensure clean build directory
+        run: |
+          rm -rf build
+          mkdir build
 
       - name: Run CMake
         run: cmake -S . -B build
